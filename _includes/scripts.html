@@ -1,0 +1,10 @@
+{% for src in site.data.lib.js %}
+  <script src="{{ src | prepend: site.baseurl }}"></script>
+{% endfor %}
+
+{% if page.js %}
+  {% for src in page.js %}
+    <script src="{{ src | prepend: site.baseurl }}"></script>
+  {% endfor %}
+{% endif %}
+

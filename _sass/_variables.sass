@@ -1,0 +1,34 @@
+// Base styles
+$base-font-family: Helvetica, Arial, sans-serif
+$base-font-size:   16px
+$base-line-height: 1.5
+
+// fonts
+$font-size-small:  $base-font-size * 0.875
+
+// colors
+$color-text:       #111
+$color-background: #fdfdfd
+$color-brand:      #2a7ae2
+$color-grey:       #828282
+$color-grey-light: lighten($color-grey, 40%)
+$color-grey-dark:  darken($color-grey, 25%)
+
+// spacings
+$spacing-unit:     30px
+$content-width:    800px
+$on-palm:          600px
+$on-laptop:        800px
+
+
+
+// Using media queries with like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2
+//         padding-left: $spacing-unit / 2
+//     }
+// }
+@mixin media-query($device)
+  @media screen and (max-width: $device)
+    @content

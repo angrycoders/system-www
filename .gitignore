@@ -1,0 +1,12 @@
+# depedencies installed with composer
+vendor/
+
+# jekyll output directory
+_site
+
+# sass cache directory
+.sass-cache
+
+# our library (depedencies)
+lib/
+

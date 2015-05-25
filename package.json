@@ -1,0 +1,28 @@
+{
+  "name": "angrycoders-system-www",
+  "version": "0.0.0",
+  "description": "System User Interface",
+  "main": "\"\"",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angrycoders/system-www.git"
+  },
+  "keywords": [
+    "angrycoders",
+    "user-interface"
+  ],
+  "author": "GochoMugo <gocho.ian@students.jkuat.ac.ke>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/angrycoders/system-www/issues"
+  },
+  "homepage": "https://github.com/angrycoders/system-www#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.4",
+    "jquery": "^1.11.3",
+    "superagent": "^1.2.0"
+  }
+}

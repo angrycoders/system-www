@@ -1,0 +1,11 @@
+title: Jkuat App
+email: gocho.ian@students.jkuat.ac.ke
+description: >
+  Jkuat System is a Information Desiminator System
+baseurl: ""
+url: "http://localhost"
+twitter_username: gochomugo
+github_username:  GochoMugo
+
+# Build settings
+markdown: kramdown
