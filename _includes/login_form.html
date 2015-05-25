@@ -1,5 +1,16 @@
-<form action="/sys/login" method="post">
-  <input type="email" class="form-control" placeholder="JKUAT email address">
-  <input type="password" class="form-control" placeholder="password">
-  <input type="submit" value="login" class="btn btn-primary btn-block">
+<div id="loginError"
+  class="alert alert-danger alert-dismissible hidden animated bounceIn" role="alert">
+  <button type="button" class="close" data-dismiss="alert"
+    aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+  <strong>Failed!</strong> Email-Password combination is incorrect
+</div>
+
+<form id="loginForm">
+  <input name="email" type="email" class="form-control"
+    placeholder="JKUAT email address" required>
+  <input name="password" type="password" class="form-control"
+    placeholder="password" required>
+  <input id="btnLogin" type="submit" value="login" class="btn btn-primary btn-block">
 </form>

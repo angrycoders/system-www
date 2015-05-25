@@ -1,5 +1,6 @@
 stylesheets:
   - /lib/superhero.min.css
+  - /lib/animate.css
 js:
   - /lib/jquery/dist/jquery.min.js
   - /lib/bootstrap/dist/js/bootstrap.min.js

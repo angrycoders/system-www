@@ -15,10 +15,12 @@ npm install
 mv node_modules/* lib/
 
 pushd lib
-log "installing reqwest" 0
+log "downloading reqwest (for ajax calls)" 0
 wget https://raw.githubusercontent.com/ded/reqwest/master/reqwest.min.js
-log "installing superhero bootswatch theme" 0
+log "downloading superhero (bootstrap theme)" 0
 wget https://bootswatch.com/superhero/bootstrap.min.css
 mv bootstrap.min.css superhero.min.css
+log "downloading animate.css (for animations)" 0
+wget https://raw.github.com/daneden/animate.css/master/animate.css
 popd
 
