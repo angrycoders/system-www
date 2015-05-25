@@ -45,8 +45,8 @@ $('#loginForm').submit(function(e) {
       // show error message
       $(loginErrorBanner).removeClass('hidden');
       // error occurred. Clear form data
-      $('#txtEmail').val('');
-      $('#txtPassword').val('');
+      $('input[name=email]').val('');
+      $('input[name=password]').val('');
       // re-enable login button
       $(btnLogin).removeAttr('disabled');
       return;
