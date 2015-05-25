@@ -1,5 +1,5 @@
 stylesheets:
-  - /lib/bootstrap/dist/css/bootstrap.min.css
+  - /lib/superhero.min.css
 js:
   - /lib/jquery/dist/jquery.min.js
   - /lib/bootstrap/dist/js/bootstrap.min.js
