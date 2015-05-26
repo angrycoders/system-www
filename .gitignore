@@ -2,10 +2,11 @@
 vendor/
 
 # jekyll output directory
-_site
+_site/
+_out/
 
 # sass cache directory
-.sass-cache
+.sass-cache/
 
 # our library (depedencies)
 lib/
