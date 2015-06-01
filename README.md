@@ -8,6 +8,12 @@
 
 1. [jekyll](http://jekyllrb.com)
 1. [nodejs](http://nodejs.org) (for [npm](https://www.npmjs.com))
+1. [wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm)
+1. installing dependencies:
+  ```bash
+  ⇒ script/deps.sh # for *nix
+  ⇒ script\deps.bat # for Windows
+  ```
 
 
 ## building:
