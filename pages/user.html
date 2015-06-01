@@ -9,6 +9,12 @@ js:
   - /js/user.js
 ---
 
+<?php
+if (! $_SESSION['username']) {
+    header("location: {{ '/login' | prepend: site.baseurl }}");
+}
+
+?>
 
 <div data-ng-app="userApp">
 
