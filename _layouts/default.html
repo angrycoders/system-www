@@ -4,8 +4,9 @@
 session_start();
 
 // if session is ON, redirect to user page
-if ($_SESSION['username'] && $_SERVER['REQUEST_URI'] == '/www/') {
-    header("Location: /www/user/");
+if ($_SESSION['username'] &&
+    $_SERVER['REQUEST_URI'] == "{{ site.baseurl }}/") {
+    header("Location: {{ '/user/' | prepend: site.baseurl }}");
     return;
 }
 ?>
@@ -31,3 +32,4 @@ if ($_SESSION['username'] && $_SERVER['REQUEST_URI'] == '/www/') {
   </body>
 
 </html>
+
