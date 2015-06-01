@@ -6,7 +6,7 @@
 'use strict';
 
 
-var endpoint = '/sys/login';
+var endpoint = '/sys/login.php';
 
 
 /*
@@ -41,8 +41,10 @@ $('#loginForm').submit(function(e) {
   $(loginErrorBanner).addClass('hidden');
   // Making a login request
   login($(this).serialize(), function(err, data) {
+    console.log(err, data);
     if (err) {
       // show error message
+      $("#loginMessage").html(err.responseText || err.statusText);
       $(loginErrorBanner).removeClass('hidden');
       // error occurred. Clear form data
       $('input[name=email]').val('');
@@ -51,8 +53,9 @@ $('#loginForm').submit(function(e) {
       $(btnLogin).removeAttr('disabled');
       return;
     }
-    // successful login. Redirecting user to user page
-    window.location = "/user/";
+    // successful login. We shall be redirected to
+    // user page by server response
+    window.location = data.url;
     return;
   });
 });
