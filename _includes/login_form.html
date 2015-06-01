@@ -1,13 +1,20 @@
-<div id="loginError"
-  class="alert alert-danger alert-dismissible hidden animated bounceIn" role="alert">
-  <button type="button" class="close" data-dismiss="alert"
-    aria-label="Close">
-    <span aria-hidden="true">&times;</span>
-  </button>
-  <strong>Failed!</strong> <span id="loginMessage"></span>
-</div>
+<?php
+if ($_SESSION['login_error']) {
+?>
+  <div id="loginError"
+    class="alert alert-danger alert-dismissible animated bounceIn"
+    role="alert">
+    <button type="button" class="close" data-dismiss="alert"
+      aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Failed!</strong> <?php echo $_SESSION['login_error']; ?>
+  </div>
+<?php
+}
+?>
 
-<form id="loginForm">
+<form id="loginForm" action="/sys/login.php" method="post">
   <input name="email" type="email" class="form-control"
     placeholder="JKUAT email address" required>
   <input name="password" type="password" class="form-control"

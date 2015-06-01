@@ -1,3 +1,15 @@
+<?php
+// This runs on ALL pages (with default layout)
+
+session_start();
+
+// if session is ON, redirect to user page
+if ($_SESSION['username'] && $_SERVER['REQUEST_URI'] == '/www/') {
+    header("Location: /www/user/");
+    return;
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 

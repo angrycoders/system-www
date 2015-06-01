@@ -1,0 +1,27 @@
+---
+layout: default
+permalink: /logout/
+---
+
+<?php
+
+session_unset();
+session_destroy();
+
+header("Location: /");
+
+?>
+
+<div class="col-sm-4 col-sm-offset-4 center">
+
+    <div class="alert alert-danger alert-dismissible animated bounceIn"
+      role="alert">
+      <button type="button" class="close" data-dismiss="alert"
+        aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <strong>Goodbye!</strong> Logging you out
+    </div>
+
+</div>
+
