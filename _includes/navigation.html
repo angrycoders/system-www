@@ -30,7 +30,8 @@
       </ul>
       <ul class="nav navbar-nav pull-right">
         <li>
-          <a href="/login/" class="btn btn-default navbar-btn">
+          <a href="{{ '/login/' | prepend: site.baseurl }}"
+            class="btn btn-default navbar-btn">
             Login with JKUAT Email
           </a>
         </li>
