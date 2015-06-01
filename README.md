@@ -1,19 +1,24 @@
 
-# system-www
+# angrycoders/system-www
 
-> User Interface for angrycoders/system and ecosystem
+> User Interface for [angrycoders/system](https://github.com/angrycoders/system) and ecosystem
 
 
-## prerequisistes:
+## prerequisites:
 
-1. [jekyll](http://jekyllrb.com)
+1. [ruby](https://www.ruby-lang.org/) (with [ruby-gems](https://rubygems.org/))
 1. [nodejs](http://nodejs.org) (for [npm](https://www.npmjs.com))
 1. [wget for Windows](http://gnuwin32.sourceforge.net/packages/wget.htm)
-1. installing dependencies:
-  ```bash
-  ⇒ script/deps.sh # for *nix
-  ⇒ script\deps.bat # for Windows
-  ```
+
+
+## dependencies:
+
+To install dependencies:
+
+```bash
+⇒ script/deps.sh # for *nix
+⇒ script\deps.bat # for Windows
+```
 
 
 ## building:
@@ -23,7 +28,7 @@
 ⇒ script\build.bat # for Windows
 ```
 
-Static files will be placed in the directory `_out`.
+Static files will be placed in the directory `_out/`.
 
 
 ## developing:
